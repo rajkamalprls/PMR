@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Signup Forms</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(img\ \(12\).jpg);
+      background-size: cover;
+      background-position: center;
+      color: rgb(0, 0, 0);
+
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .signup-form {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+
+    .signup-form h2 {
+      text-align: center;
+    }
+
+    .signup-form label {
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .signup-form input[type="text"],
+    .signup-form input[type="password"],
+    .signup-form input[type="number"] {
+      width: calc(100% - 10px);
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      border: 1px solid #000000;
+    }
+
+    .signup-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <div class="signup-form">
+      <h2>Patient Signup</h2>
+      <form action="/patient_signup" method="post">
+        <label for="patientName">Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="patientAddress">Address:</label>
+        <input type="text" id="patientAddress" name="patientAddress" required>
+
+        <label for="patientContact">Contact Details:</label>
+        <input type="text" id="patientContact" name="patientContact" required>
+
+        <label for="govtID">Government ID Proof:</label>
+        <input type="text" id="govtID" name="govtID" required>
+
+        <input type="submit" value="Signup">
+      </form>
+    </div>
+
+    <div class="signup-form">
+      <h2>Doctor Signup</h2>
+      <form action="/doctor_signup" method="post">
+        <label for="doctorName">Name:</label>
+        <input type="text" id="doctorName" name="doctorName" required>
+
+        <label for="doctorAddress">Address:</label>
+        <input type="text" id="doctorAddress" name="doctorAddress" required>
+
+        <label for="doctorContact">Contact Details:</label>
+        <input type="text" id="doctorContact" name="doctorContact" required>
+
+        <label for="govtID">Government ID Proof:</label>
+        <input type="text" id="govtID" name="govtID" required>
+
+        <label for="doctorLicense">License Number:</label>
+        <input type="text" id="doctorLicense" name="doctorLicense" required>
+
+        <input type="submit" value="Signup">
+      </form>
+    </div>
+
+    <div class="signup-form">
+      <h2>Pharmaceutical Signup</h2>
+      <form action="/pharma_signup" method="post">
+        <label for="pharmaName">Name:</label>
+        <input type="text" id="pharmaName" name="pharmaName" required>
+
+        <label for="pharmaAddress">Address:</label>
+        <input type="text" id="pharmaAddress" name="pharmaAddress" required>
+
+        <label for="pharmaContact">Contact Details:</label>
+        <input type="text" id="pharmaContact" name="pharmaContact" required>
+
+        <label for="govtID">Government ID Proof:</label>
+        <input type="text" id="govtID" name="govtID" required>
+
+        <label for="pharmaLicense">License Number:</label>
+        <input type="text" id="pharmaLicense" name="pharmaLicense" required>
+
+        <input type="submit" value="Signup">
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
